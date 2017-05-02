@@ -1,0 +1,29 @@
+<div class = "page-header">
+	<h1> User Registration </h1>
+</div>
+
+<form ng-submit = "reg.regUser(regData);">
+	<label> EMAIL:</label>
+	<input class = "form-control" type = "text" name = "email" placeholder=" enter username" ng-model = "reg.regData.email">
+	<br>
+	<label>USERNAME:</label>
+	<input class = "form-control" type = "text" name = "username" placeholder="enter user name" ng-model = "reg.regData.username">
+	<br>
+	<label>PASSWORD:</label>
+	<input class = "form-control" type = "password" name = "password" placeholder=" enter password ab" ng-model = "reg.regData.password">
+	<br>
+	<button class = "btn btn-primary" type = "submit">REGISTER</button>
+	<br>
+	
+</form>
+
+<br>
+<!-- you pass msgs in angular by double braces -->
+<div class = "row show-hide-message" ng-show = "reg.sMsg">
+	<div class = "alert alert-success"> {{ reg.sMsg }}</div> 
+</div>
+
+<br>
+<div class = "row show-hide-message" ng-show = "reg.eMsg">
+	<div class = "alert alert-danger"> {{ reg.eMsg }}</div> 
+</div>	

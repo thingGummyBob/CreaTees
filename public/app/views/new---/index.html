@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8">
+    <title>CreaTees - Let Your Imagination Go Wild</title>
+    <link href="assets/masterslider/style/masterslider.css" rel="stylesheet" media="screen">
+    <!--Styles-->
+    <link href="assets/css/styles.css" rel="stylesheet" media="screen">
+    <!--Color Scheme-->
+    <link class="color-scheme" href="assets/css/colors/color-default.css" rel="stylesheet" media="screen">
+    <!--Color Switcher-->
+    <link href="assets/color-switcher/color-switcher.css" rel="stylesheet" media="screen">
+    <!--Modernizr-->
+		<script src="assets/js/libs/modernizr.custom.js"></script>
+  <!-- NEW -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="app/app.js"></script>
+    <!-- all angular files in app.js, like our main config file -->
+    <script src="app/routes.js"></script>
+
+  </head>
+
+  <!--Body-->
+  <body ng-app="userApp">
+
+
+  <!--Color Switcher-->
+     <div class="color-switcher group animated">
+      <!-- <div class="toggle"><i class="fa fa-cog"></i></div> -->
+
+      <div class="color">
+        <a style="background-color: #607d8b;" class="current" href="#" data-color="default"></a>
+        <span>#607d8b</span>
+      </div>
+
+      <div class="color">
+        <a style="background-color: #ff5722;" href="#" data-color="scheme2"></a>
+        <span>#ff5722</span>
+      </div>
+
+      <div class="color">
+        <a style="background-color: #e91e63;" href="#" data-color="scheme3"></a>
+        <span>#e91e63</span>
+      </div>
+
+      <div class="color">
+        <a style="background-color: #ff9016;" href="#" data-color="scheme4"></a>
+        <span>#ff9016</span>
+      </div>
+
+      <div class="color">
+        <a style="background-color: #8bc34a;" href="#" data-color="scheme5"></a>
+        <span>#8bc34a</span>
+      </div>
+
+      <div class="color">
+        <a style="background-color: #03a9f4;" href="#" data-color="scheme6"></a>
+        <span>#03a9f4</span>
+      </div>
+
+    </div><!--Color Switcher End-->
+
+
+    <!--Header-->
+    <header data-offset-top="500" data-stuck="600">
+    
+      <!--Search Form-->
+      <form class="search-form closed" method="get" role="form" autocomplete="off">
+      	<div class="container">
+          <div class="close-search"><i class="icon-delete"></i></div>
+            <div class="form-group">
+              <label class="sr-only" for="search-hd">Search for product</label>
+              <input type="text" class="form-control" name="search-hd" id="search-hd" placeholder="Search for product">
+              <button type="submit"><i class="icon-magnifier"></i></button>
+          </div>
+        </div>
+      </form>
+    
+      <!--Main Menu-->
+      <nav class="menu">
+        <div class="container">
+          
+          <ul class="main">
+          	<li class="has-submenu"><a href="#/home.html"><span>H</span>ome<i class="fa fa-chevron-down"></i></a><!--Class "has-submenu" for proper highlighting and dropdown-->
+            	<ul class="submenu">
+              	<li><a href="index-2.html">Home - Slideshow</a></li>
+              	<li><a href="home-fullscreen.html">Home - Fullscreen Slider</a></li>
+              	<li><a href="home-showcase.html">Home - Product Showcase</a></li>
+              	<li><a href="home-categories.html">Home - Categories Slider</a></li>
+              	<li><a href="home-offers.html">Home - Special Offers</a></li>
+              </ul>
+            </li>
+          	<li class="has-submenu"><a href="shop-filters-left-3cols.html"><span>R</span>ecent<i class="fa fa-chevron-down"></i></a>
+            	<ul class="submenu">
+              	<li><a href="shop-filters-left-3cols.html">Shop - Filters Left 3 Cols</a></li>
+              	<li><a href="shop-filters-left-2cols.html">Shop - Filters Left 2 Cols</a></li>
+              	<li><a href="shop-filters-right-3cols.html">Shop - Filters Right 3 Cols</a></li>
+              	<li><a href="shop-filters-right-2cols.html">Shop - Filters Right 2 Cols</a></li>
+              	<li><a href="shop-no-filters-4cols.html">Shop - No Filters 4 Cols</a></li>
+              	<li><a href="shop-no-filters-3cols.html">Shop - No Filters 3 Cols</a></li>
+                <li><a href="shop-single-item-v1.html">Shop - Single Item Vers 1</a></li>
+                <li><a href="shop-single-item-v2.html">Shop - Single Item Vers 2</a></li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="checkout.html">Checkout Page</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+              </ul>
+            </li>
+          	<li class="has-submenu"><a href="blog-sidebar-right.html"><span>T</span>rending<i class="fa fa-chevron-down"></i></a>
+            	<ul class="submenu">
+              	<li><a href="blog-sidebar-left.html">Blog - Sidebar Left</a></li>
+              	<li><a href="blog-sidebar-right.html">Blog - Sidebar Right</a></li>
+              	<li><a href="blog-single.html">Blog - Single Post</a></li>
+              </ul>
+            </li>
+          	<li class="has-submenu"><a href="#/about"><span>R</span>ecommandations<i class="fa fa-chevron-down"></i></a>
+            	<ul class="submenu">
+                <li><a href="register.html">Login / Registration</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="coming-soon.html">Coming Soon</a></li>
+                <li><a href="404.html">404 Page</a></li>
+                <li><a href="support.html">Support Page</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="history.html">History Page</a></li>
+                <li><a href="tracking.html">Tracking Page</a></li>
+                <li><a href="cs-page.html">Components &amp; Styles</a></li>
+              </ul>
+            </li>
+          	<li class="hide-sm"><a href="support.html"><span>S</span>upport</a></li>
+          </ul>
+
+        </div>
+
+        <div class="catalog-block">
+          <div class="container">
+            <ul class="catalog">
+              <li class="has-submenu"><a href="shop-filters-left-3cols.html">T-shirts<i class="fa fa-chevron-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="#">Wristlet</a></li>
+                  <li class="has-submenu"><a href="#">Backpack</a><!--Class "has-submenu" for adding carret and dropdown-->
+                    <ul class="sub-submenu">
+                      <li><a href="#">KATA</a></li>
+                      <li><a href="#">Think Tank</a></li>
+                      <li><a href="#">Manfrotto</a></li>
+                      <li><a href="#">Lowepro</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Hat box</a></li>
+                  <li class="has-submenu"><a href="#">Clutch</a>
+                    <ul class="sub-submenu">
+                      <li><a href="#">Louis Vuitton</a></li>
+                      <li><a href="#">Chanel</a></li>
+                      <li><a href="#">Christian Dior</a></li>
+                      <li><a href="#">Gucci</a></li>
+                      <li><a href="#">Neri Karra</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Envelope</a></li>
+                  <li class="offer">
+                    <div class="col-1">
+                      <p class="p-style2">Use product images on the menu. It's easier to percept a visual content than a textual one. </p>
+                    </div>
+                    <div class="col-2">
+                      <img src="assets/img/offers/menu-drodown-offer.jpg" alt="Special Offer"/>
+                      <a class="btn btn-black" href="#"><span>584$</span>Special offer</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="shop-filters-left-3cols.html">Mugs</a></li>
+              <li><a href="shop-filters-left-3cols.html">Keychains</a></li>
+              <li><a href="shop-filters-left-3cols.html">Phone covers</a></li>
+              <!-- <li><a href="shop-filters-left-3cols.html">Hobo bags</a></li> -->
+              <!-- <li><a href="shop-filters-left-3cols.html">Shoulder Bag</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="toolbar-container">
+        <div class="container">  
+          <!--Toolbar-->
+          <div class="toolbar group">
+            <a class="login-btn btn-outlined-invert" href="#" data-toggle="modal" data-target="#loginModal"><i class="icon-profile"></i> <span><b>L</b>ogin</span></a>
+
+            <a class="btn-outlined-invert" href="wishlist.html"><i class="icon-heart"></i> <span><b>W</b>ishlist</span></a>   
+
+            <div class="cart-btn">
+              <a class="btn btn-outlined-invert" href="shopping-cart.html"><i class="icon-shopping-cart-content"></i><span>3</span><b class="custom-color">PKR 2,400</b></a>
+              
+              <!--Cart Dropdown-->
+              <div class="cart-dropdown">
+                <span></span><!--Small rectangle to overlap Cart button-->
+                <div class="body">
+                  <table>
+                    <tr>
+                      <th>Items</th>
+                      <th>Quantity</th>
+                      <th>Price</th>
+                    </tr>
+                    <tr class="item">
+                      <td><div class="delete"></div><a href="#">Good Joo-Joo Surfb</a></td>
+                      <td><input type="text" value="1"></td>
+                      <td class="price">89 005 $</td>
+                    </tr>
+                    <tr class="item">
+                      <td><div class="delete"></div><a href="#">Good Joo-Joo Item</a></td>
+                      <td><input type="text" value="2"></td>
+                      <td class="price">4 300 $</td>
+                    </tr>
+                    <tr class="item">
+                      <td><div class="delete"></div><a href="#">Good Joo-Joo</a></td>
+                      <td><input type="text" value="5"></td>
+                      <td class="price">84 $</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="footer group">
+                  <div class="buttons">
+                    <a class="btn btn-outlined-invert" href="checkout.html"><i class="icon-download"></i>Checkout</a>
+                    <a class="btn btn-outlined-invert" href="shopping-cart.html"><i class="icon-shopping-cart-content"></i>To cart</a>
+                  </div>
+                  <div class="total">93 389 $</div>
+                </div>
+              </div><!--Cart Dropdown Close-->
+            </div>
+
+            <button class="search-btn btn-outlined-invert"><i class="icon-magnifier"></i></button>
+          </div><!--Toolbar Close-->
+        </div>
+      </div>
+    </header><!--Header Close-->
+    
+    <!--Page Content-->
+    <div class="page-content">
+      
+    </div><!--Page Content Close-->
+    
+
+
+  	<!--Footer-->
+    <footer class="footer">
+    	<div class="container">
+      	<div class="row">
+        	<div class="col-lg-5 col-md-5 col-sm-5">
+          	<div class="info">
+              <a class="logo" href="index-2.html"><img src="assets/img/logo-default.png" alt="Limo"/></a>
+              <p class="light-color">Let your imagination go wild!</p>
+              <div class="social">
+              	<a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+              	<a href="#" target="_blank"><i class="fa fa-youtube-square"></i></a>
+              	<a href="#" target="_blank"><i class="fa fa-tumblr-square"></i></a>
+              	<a href="#" target="_blank"><i class="fa fa-vimeo-square"></i></a>
+              	<a href="#" target="_blank"><i class="fa fa-pinterest-square"></i></a>
+              	<a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+          	<h2>Latest news</h2>
+            <ul class="list-unstyled ligt">
+            	<li>25 of May | <a href="#" class="light-color">new arrivals in Spring</a></li>
+              <li>2 of May | <a href="#" class="light-color">checkout our newest T-shirt designs!</a></li>
+            	<li>24 of April | <a href="#" class="light-color">5 facts about keychains</a></li>
+            </ul>
+          </div>
+          <div class="contacts col-lg-3 col-md-3 col-sm-3">
+          	<h2>Contact us</h2>
+            <p class="p-style3 light-color">
+            	Lahore University of Management Sciences<br/>
+              Opposite Sector U, DHA, Lahore<br/>
+              <a href="mailto:mail@Limo.com" class="light-color">support@createes.com</a><br/>
+              +92 42 35123412<br/>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+<!-- new -->
+      <div ng-view></div>
+    </footer><!--Footer Close-->
+    
+    <!--Javascript (jQuery) Libraries and Plugins-->
+    <!-- <script src="assets/js/jquery-3.2.1.min.js"></script> -->
+    <script src="assets/js/libs/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+		
+		<script src="assets/js/libs/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="assets/js/libs/jquery.easing.min.js"></script>
+		<script src="assets/js/plugins/bootstrap.min.js"></script>
+		<script src="assets/js/plugins/smoothscroll.js"></script>
+		<script src="assets/js/plugins/jquery.validate.min.js"></script>
+		<script src="assets/js/plugins/icheck.min.js"></script>
+		<script src="assets/js/plugins/jquery.placeholder.js"></script>
+		<script src="assets/js/plugins/jquery.stellar.min.js"></script>
+		<script src="assets/js/plugins/jquery.touchSwipe.min.js"></script>
+		<script src="assets/js/plugins/jquery.shuffle.min.js"></script>
+    <script src="assets/js/plugins/lightGallery.min.js"></script>
+    <script src="assets/js/plugins/owl.carousel.min.js"></script>
+    <!-- <script src="assets/js/plugins/masterslider.min.js"></script> -->
+		<script src="assets/js/scripts.js"></script>
+
+    <script src="assets/color-switcher/color-switcher.js"></script>
+
+    <!--Google Remarketing Tag (Placed before </body>)-->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 966923546;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <!--  -->
+  <!--<script type="text/javascript" src="../../../../../www.googleadservices.com/pagead/f.txt">-->
+  </script>
+  <noscript>
+  <!-- <div style="display:inline;"> -->
+  <!-- <img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/966923546/?value=0&amp;guid=ON&amp;script=0"/>
+   -->
+   <!-- </div> -->
+  </noscript>
+
+  </body><!--Body Close-->
+
+<!-- Mirrored from the8guild.com/themes/html/limo/v1.5/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Mar 2017 17:32:45 GMT -->
+</html>
