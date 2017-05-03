@@ -11,6 +11,10 @@ appRoutes.config(function($routeProvider, $locationProvider){
 		templateUrl: 'app/views/pages/about.html',
 		// controller: 'docController'
 	})
+	.when('/create' ,{
+		templateUrl: 'app/views/pages/create.html',
+		// controller: 'docController'
+	})
 	.when('/register' ,{
 		templateUrl: 'app/views/pages/users/register.html',
 		controller: 'regCtrl',
